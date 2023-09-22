@@ -1,0 +1,207 @@
+/* Common Style*/
+
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  color: white;
+  background-image: url("./images/ethiopia_food_beyaynet.jpg");
+  background-size: cover;
+  backdrop-filter: blur(5px) brightness(50%);
+}
+
+/* Nav Styles */
+
+nav {
+  height: 9vh;
+  background-color: #f2cea2;
+  color: #515932;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5px;
+  box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav h2 {
+  margin-left: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav span {
+  display: block;
+}
+
+.home-recipe {
+  display: flex;
+}
+.home-recipe .home,
+.recipes {
+  margin-right: 80px;
+}
+
+.home:hover,
+.recipes:hover,
+nav h2:hover {
+  color: #d93636;
+  cursor: pointer;
+}
+
+.home-recipe .recipes {
+  margin-left: -20px;
+}
+
+/* Main Styles */
+
+main {
+  height: 79vh;
+  margin-top: 8vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-page {
+  width: auto;
+  height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -50px;
+}
+
+.welcome-page h1 {
+  font-size: 70px;
+  color: #d93636;
+  font-weight: 800;
+}
+.welcome-page p {
+  margin-top: 20px;
+  font-size: 18px;
+
+  font-weight: 800;
+  width: 700px;
+}
+
+.welcome-txt span {
+  color: #f2cea2;
+  display: block;
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: -45px;
+
+  color: #515932;
+  padding-bottom: 14.3px;
+}
+
+.recipe-list .name-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-img h4 {
+  background-color: #f2cea2;
+  text-align: center;
+  width: 100%;
+}
+.recipe-img {
+  width: 300px;
+  height: 320px;
+
+  border-radius: 5px;
+  box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.recipe-img:hover {
+  filter: brightness(50%);
+  transition: filter 0.3s ease-out;
+  cursor: pointer;
+}
+
+.reciepe {
+  width: auto;
+  height: 640px;
+  display: flex;
+  gap: 40px;
+  margin-top: -50px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.reciepe .name-img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: flex-start;
+}
+
+.reciepe .name-img h4 {
+  color: #515932;
+  background-color: #f2cea2;
+
+  height: 30px;
+  width: auto;
+  box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+
+  text-align: center;
+  line-height: 30px;
+}
+
+.ingred-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 35px;
+}
+
+ol,
+ul {
+  width: 750px;
+  backdrop-filter: blur(80px);
+  font-weight: 900;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #f2cea2;
+  color: #515932;
+  height: 30px;
+  margin-top: 2px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 20vw;
+  padding-left: 20vw;
+}
+
+.hidden {
+  display: none;
+}
